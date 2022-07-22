@@ -6,28 +6,34 @@
 html,body{
     height: 100%;
 }
-
+/*definição do formulario */
 form{
     width: 90%;
     max-width:600px ;
     margin: 20px auto;
     text-align: center;
 }
-form fieldset{
+form fieldset{ /*agrupamento dos input*/
     padding: 0 40px;
     border: 4px solid black;
-    
+    text-align: left;
 }
-form legend{
+form legend{ /*Nome do formulario*/
     text-align: left;
     font-size: 50px;
     text-transform: uppercase;
 }
-
+/*inputs*/
 form input[type=text]{
     display: inline-block;
     width: 40%;
     margin: 20px;
+}
+
+form input[type=email]{
+    display: inline-block;
+    width: 40%;
+    margin: 16px;
 }
 
 form label{
