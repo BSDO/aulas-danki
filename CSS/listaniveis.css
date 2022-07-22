@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.lista{
+	list-style-position: inside;
+	list-style-type: decimal;
+}
+
+.lista > .item1{
+	width: 250px;
+	height: 100px;
+	background-color: grey; 
+
+}
+
+
+.lista li{
+	color: blueviolet;
+}
+
+.um{
+	width:900px;
+	height: 900px;
+	background-color: red;
+}
+
+.um .dois{
+	width:600px;
+	height: 400px;
+	background-color: grey;
+}
+
+.um .tres{
+	width: 400px;
+	height: 300px;
+	background-color: orange;
+}
+.um >.tres .quatro{
+	width: 200px;
+	height: 300px;
+	background-color: white;
+}

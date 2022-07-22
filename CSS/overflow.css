@@ -1,0 +1,22 @@
+.artigo{ /*scroll - cria uma rolagem ate o final defindo pelo tamanho*/
+    width: 200px;
+    height: 150px;
+    overflow:scroll;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+.artigo1{ /*hidden - esconde se o tamanho for menor que é o texto*/
+    width: 200px;
+    height: 150px;
+    overflow:hidden;
+    background-color: blue;
+
+}
+.artigo2{ /*visible torna visivel o tamanho mesmo que ultrapasse*/
+    width: 200px;
+    height: 150px;
+    overflow:visible;
+    background-color: yellow;            
+
+}
