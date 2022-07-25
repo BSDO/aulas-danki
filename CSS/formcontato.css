@@ -2,15 +2,15 @@
     padding: 0;
     margin: 0;
 }
-
+/*
 html,body{
     height: 100%;
-}
+}*/
 /*definição do formulario */
 form{
     width: 90%;
     max-width:600px ;
-    margin: 20px auto;
+    margin: 90px auto;
     text-align: center;
 }
 form fieldset{ /*agrupamento dos input*/
@@ -19,7 +19,7 @@ form fieldset{ /*agrupamento dos input*/
     text-align: left;
 }
 form legend{ /*Nome do formulario*/
-    text-align: left;
+    text-align: center;
     font-size: 50px;
     text-transform: uppercase;
 }
