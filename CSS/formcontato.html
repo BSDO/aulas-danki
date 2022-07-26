@@ -10,12 +10,52 @@
 <body>
         <form>
             <fieldset><!-- Agrupa elementos-->
-                <legend>Cadastro</legend> 
+                <legend>Cadastro</legend> <!--legenda do agrupamento de inputs-->
                         <!--inpunts de texto e email-->
-                    <label for="name">Nome<input type="text" id="name" name="text" placeholder="Digite seu nome"></label><br>                              
-                    <label for="email">Email<input type="email" id="email" name="text" placeholder="Digite seu email"></label>
-
-            </fieldset><!--Nome do formulario agrupado-->
+                      <input type="text" id="name" name="text" placeholder="Digite seu nome">                              
+                      <input type="email" id="email" name="text" placeholder="Digite seu email">
+                    <div>
+                        <select name="lista"> 
+                            <option disabled selected>Qual sua idade?</option>
+                                <option>12</option>
+                                    <option>18</option>
+                                        <option>24</option>
+                                     <option>30</option>
+                                 <option>36</option>
+                        </select><!--tag com mais de uma opçao pra escolher, ex idade-->
+                    </div>
+                    <h2>Qual o seu pais ?</h2><!-- titulo-->
+                    <div class="radio-input"> <!--div nacionalidade'-->
+                        <div>
+                            <input type="radio" name="pais" value=""/><span>Brasil</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="pais"value="" /><span>França</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="pais" value="" /><span>Estados unidos</span>
+                        </div>
+                    </div>
+                    <h2>Comida favorita ?</h2><!-- titulo-->
+                    <div class="check-input"><!--caixa de seleção-->
+                     
+                        <div>
+                            <input type="checkbox" name="" value="" /><span>Salada</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" value="" /><span>Macarrão</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" value="" /><span>Carne</span>
+                        </div>
+                    </div>
+                    <div>
+                        <textarea placeholder="Fale um pouco mais sobre voce!"></textarea>
+                    </div><!--Area de texto-->
+                    <div>
+                        <input type="submit" value="enviar">
+                    </div><!--botao de enviarq-->
+            </fieldset><!--Nome do formulario agrupado--> 
         </form>
 </body>
 </html>
