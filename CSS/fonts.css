@@ -1,0 +1,12 @@
+@font-face { /*Importando fonte baixada */
+    font-family: "Minha fonte"; /*nome da fonte que quiser*/
+    src: url(../fonts/Lobster-Regular.ttf);/*fonte importada*/
+}
+/*!important ele prioriza o elemento mesmo que ja tenha sido atribuido outro valor
+    * - pega todos os elementos definido
+
+*/
+h1{
+    font-family: 'Minha fonte';
+ 
+}
