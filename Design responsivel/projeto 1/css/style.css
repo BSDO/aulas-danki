@@ -97,6 +97,7 @@ form input[type=submit]{
     height: 500px;
     background-color:rgba(33, 55, 57, 0.7);
     margin-top: 120px;
+    margin-left: 120px;
     padding: 50px;
 }       
 
@@ -109,10 +110,78 @@ form input[type=submit]{
     margin-top: 25px;
     color: white;
 }
+/*outras sessoes */
+.container-conteudo {
+    padding: 60px 0;
+    background-color: rgb(105, 100, 100);
+    text-align: center;
 
-.container-conteudo{
-    width: 100%;
-    height: 500px;
-    background-color:gold;
+}
 
+.container-conteudo h2{
+    font-size: 50px;
+}
+
+.container-conteudo p{
+    font-size: 25px;
+    width: 798px;
+    display: inline-block;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.arrow{
+    width: 64px;
+    height: 64px;
+    background-image: url(../imagens/arrow.png);
+    position: relative;
+    top: 85px;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.section-1{
+    padding: 90px 0;
+}
+
+
+.section-1 h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.container-section{
+    text-align: center;
+}
+
+.section-single{
+    float: left;
+    width: 33.333%;
+    padding: 50px;
+}
+
+.section-single img{
+    width: 120px;
+    height: 120px;
+}
+
+.section-single p{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.footer{
+    border-top: 4px solid black;
+    padding: 60px 0;
+    clear: both;
+    text-align: center;
+}
+
+.footer p{
+    font-size: 30px;
+    text-transform: uppercase;
+    color:#888;
 }
