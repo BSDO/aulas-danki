@@ -35,7 +35,7 @@
 
 .form{ /*formulario*/
     width: 550px;
-    height: calc(100% + 30px);
+    height: calc(100%);
     background-color: rgb(224, 228, 231);
     float: right;
     position: relative;
