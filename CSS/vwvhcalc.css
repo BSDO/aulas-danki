@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+/*vh = viewport width - largura
+  vw = viewport height - alltura
+
+
+*/
+.box{
+    width: 50vw;
+    height: 50vh;
+    background-color: black;
+}
