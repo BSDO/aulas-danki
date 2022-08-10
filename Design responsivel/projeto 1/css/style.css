@@ -7,6 +7,7 @@
 .header{ /*Definição do header*/
     width: 100%;
     height: 60px;
+    padding: 0 2%;
     background-color: rgb(45, 5, 83);
 }
 .center{ /*ajustando */
@@ -102,6 +103,7 @@ form input[type=submit]{
 	background-color: rgba(33,35,67,0.7);
 }       
 
+
 .container-list ul{
     list-style-position: inside;
 }
@@ -123,7 +125,7 @@ form input[type=submit]{
 
 .container-conteudo p{
     font-size: 25px;
-    width: 780px;
+    width: 78;
     display: inline-block;
     margin: 15px 0;
     text-align: justify;
