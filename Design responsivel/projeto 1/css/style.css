@@ -3,6 +3,9 @@
         padding: 0;
         box-sizing: border-box;
 }
+.clear{
+    clear: both;
+}
 
 .header{ /*Definição do header*/
     width: 100%;
@@ -59,7 +62,7 @@
     
 }
 
-.input-container{
+.input-container{ /*espaçamento dos inputs*/
     margin-top: 20px;
   
 }
@@ -94,7 +97,7 @@ form input[type=submit]{
     cursor:cell;
 }
 
-.container-list{
+.container-list{ /*container com uma lista*/
     padding:40px;
 	margin-top:150px;
 	float: left;
@@ -113,8 +116,8 @@ form input[type=submit]{
     color: white;
 }
 /*outras sessoes */
-.container-conteudo {
-    padding: 60px 2%;
+.container-conteudo { 
+    padding: 60px 2%; 
     background-color: rgb(216, 255, 77);
     text-align: center;
 }
@@ -124,14 +127,14 @@ form input[type=submit]{
 }
 
 .container-conteudo p{
-    font-size: 25px;
-    width: 78;
+    font-size: 20px;
+    width: 780px;
     display: inline-block;
     margin: 15px 0;
     text-align: justify;
 }
 
-.arrow{
+.arrow{ /*imagem pra separar o conteudo*/
     width: 64px;
     height: 64px;
     background-image: url(../imagens/arrow.png);
@@ -141,7 +144,7 @@ form input[type=submit]{
     margin-left: -40px;
 }
 
-.section-1{
+.section-1{ /*sessao com imagem e descrição*/
     padding: 90px 0;
 }
 
@@ -174,7 +177,7 @@ form input[type=submit]{
     text-align: justify;
 }
 
-.footer{
+.footer{ /*rodapé*/
     border-top: 4px solid black;
     padding: 30px 0;
     clear: both;
@@ -185,4 +188,60 @@ form input[type=submit]{
     font-size: 15px;
     text-transform: uppercase;
     color:#888;
+}
+
+/*quando a pagina dimunir o layout será responsivel*/
+@media screen and (max-width: 1024px){
+        .header{
+            width: 100%;
+            height: auto;
+            padding: 10px 0;
+            text-align: center;
+        }   
+        .header img{
+            margin: 0 auto;
+        }
+        .container-banner{
+             width: 100%;
+             padding:40px 2%;
+             height:auto;
+             text-align: center;
+
+        }
+        .form{ /*formulario*/
+            padding:10px;
+            max-width: 400px;
+            width: 90%;
+            height: 100% ;
+            display: inline-block;
+            margin-top: 30px;
+            margin-right: 15%;
+          
+        }
+        .container-list{ /*container com uma lista*/
+            padding:40px;
+            float: none;
+            width:90%;
+            max-width: 500px;
+            height: auto;
+            display: inline-block;
+            margin-top: 0;
+        }
+        .container-conteudo p{
+            font-size: 20px;
+            width: 100%;
+            display: inline-block;
+            margin: 15px 0;
+            text-align: justify;
+            padding: 30px;
+        }  
+
+        .section-single{
+            float: none;
+            width: 100%;
+            max-width: 600px;
+            display: inline-block;
+            padding: 60px;
+        }
+        
 }
