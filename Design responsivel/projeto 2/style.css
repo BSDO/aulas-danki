@@ -7,8 +7,41 @@
     width: 1100px;
     margin: 0 auto;
     padding: 0 2%;
+    height: 40px;
 
 }
-
-
 .clear{clear: both;}
+
+header{
+    background-color: #2359af;
+    padding: 8px 0;
+}
+
+div.logo{
+    color: white;
+    float: left;
+}
+
+.logo h2{
+    font-size: 29px;
+    font-weight: nor;
+}
+
+form.form-login{
+    float: right;
+}
+
+.form-login .form-element{
+    display: inline-block;
+}
+
+.form-element p{
+    color: white;
+    font-size: 14px;
+}
+
+.form-element input[type=submit]{
+    background:#2359af;
+    color: white;
+    border: 2px solid #dbe1e9;
+}
