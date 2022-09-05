@@ -12,11 +12,18 @@
         width: 500px;
         height: 500px;
         background-color: aqua;
-        transition: 0.7 ms;
+        transition-property: width height;  /*define o que vai ser animado*/
+        transition-duration: 1s;  /*duraçao*/
+        /* transition-delay: 5s; duraçao antes de começar a animação*/
+        transition-timing-function: ease-in-out; /*define como o elemento vai de rapido a devagar*/
+    
     }
 
     .box:hover{
-        width: 800px;
+        width:400px;
+        height: 330px;
+        background-color: black;
+        border-radius: 50%;
     }
 </style>
 <body>
