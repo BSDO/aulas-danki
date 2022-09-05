@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+    animation-name: s1;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    background:linear-gradient(rgb(218, 15, 15),rgb(193, 208, 248));
+}
+
+@keyframes s1 {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+
+
+.nav-bar ul li {
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    display: inline-block;
+    padding: 20px;
+}
+
+li a{
+    text-decoration: none;
+}
