@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .box{
+                width: 500px;
+                height: 400px;
+                margin: 0 auto;
+                background-color: aqua;
+                animation-name: bsdo1; /*nome da animação*/
+                animation-duration: 8s; /*duraçao que essa animação dura.*/
+                /*animation-delay: 8s;tempo antes de iniciar*/
+                animation-iteration-count: infinite; /*quantas vezes vai se repetir*/
+                /*animation-timing-function: ease-in-out;*/
+                position: relative;
+            }
+                @keyframes bsdo1{ /*pode ser from e to*/
+                0%{
+                    right: 0;
+                    background: linear-gradient(black,blue);
+                }
+                50%{
+                    right: 350px;
+                    background:linear-gradient(yellow, blue );
+                }
+            
+                75%{
+                    left: 500px;
+                    background: linear-gradient(black,blue);
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    
+</body>
+</html>
