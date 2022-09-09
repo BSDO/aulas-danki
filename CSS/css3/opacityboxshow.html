@@ -6,12 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opacidade e box shadow</title>
     <style>
+        /*opacity: 0.1;Transparece um elemento*/ 
+        .box{
+            width: 500px;
+            height: 300px;
+            background-color: rgb(2, 37, 8);
+            text-align: center;
+            animation-name: animacao;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            box-shadow: 20px 20px 30px 20px black;
+          }
+          @keyframes animacao {/*Animaçao da sombra */
+                
+                0%{
+                    box-shadow: 20px 20px 15px 10px rgb(77, 57, 57);
+                }
+                50%{
+                    box-shadow: 20px 20px 15px 10px rgb(104, 11, 11);
+                }
+                100%{
+                    box-shadow: 20px 20px 15px 10px rgb(18, 212, 12);
+                }
+          }
 
+        .box h1{
+            color: wheat;
+            
+        }
 
     </style>
 </head>
 <body>
+    <div class="box">
+        <h1>Hello</h1>
+    </div>
     
-    
+
 </body>
 </html>
