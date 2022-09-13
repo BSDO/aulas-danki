@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;box-sizing:border-box ;}
+        main{
+            display: flex;/*se comporta como uma tabela, muda a ordem dos elementos e posicionamento*/
+            flex-direction:column-reverse; /*row e column*/
+            align-items:flex-start; /*alinhamento do elemento */
+        }
+        aside{
+            background-color: blue;
+            padding: 30px;
+        }
+        article{
+            padding: 30px;
+            background-color: bisque;
+        }
+    
+</style>
+<body>
+    <main>
+        <aside>
+            <h2>artigos 1</h2>
+            <ul> 
+                <li>artugo 1</li>
+                <li>artugo 1</li>
+                <li>artugo 1</li>
+            </ul>
+
+        </aside>
+        <article>
+            <h2>MEu arutigo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos perspiciatis minima expedita molestiae dicta repudiandae id quasi! At quia velit dignissimos animi amet possimus vitae voluptas, deleniti consectetur earum enim!</p>
+
+        </article>
+        
+    </main>
+    
+</body>
+</html>
