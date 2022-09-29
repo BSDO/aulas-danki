@@ -6,7 +6,6 @@
 
 html,body{
     height: 100%;
- 
 }
 
 .container{
@@ -48,12 +47,12 @@ section.cover-form{
 }
 
 .bg{
-    height: 500px;
+    position: relative;
+    height: 560px;
     background-size:cover; 
     background-position: center;
     background-image: url('img/thumb-1920-1000923.jpg');
-    position: relative;
-
+    
 }
 
 
@@ -65,7 +64,6 @@ section.cover-form{
     width: 400px;
     height: 100%;
     background-color: #bdb1b1;
-    
 }   
 
 
@@ -124,14 +122,13 @@ form input[type=tel]{
 }
 
 section.chamada{
- 
     text-align: center;
     width: 100%;
     display: inline-block;
     
 }
 section.chamada .container{
-    padding: 50px 0;
+    padding:70px 0 50px 0;
     background-color: rgb(135, 122, 180);
 
 }
@@ -150,7 +147,51 @@ section.chamada .container p{
     font-weight: 800;
 }
 
+.flex-mosaico{
+    display: flex;
+ 
+}
 
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+ 
+}
+
+.item-2-mosaico{
+    padding: 40px;
+    width: 40%;text-align: justify;
+    background-color: rgb(88, 106, 245);
+}
+
+.item-2-mosaico p{
+    font-size: 25px;
+    font-weight: 100;
+    color: rgb(253, 253, 253);
+}
+
+footer{
+    text-align: center;
+    padding: 40px 0;
+    background-color: aqua;
+}
+
+
+
+@media screen and (max-width:768px){
+    .flex-mosaico{
+        display: block;
+    }
+    .item-1-mosaico{
+        width: 100%;
+        padding-top: 80%;
+    }
+    .item-2-mosaico{
+        width: 100%;
+    }
+    
+}
 
 @media screen and (max-width: 510px){
 
@@ -163,5 +204,7 @@ section.chamada .container p{
         display: inline-block;
         margin-top: 0 2%;
     }
+    
+   
 }
 
