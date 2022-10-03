@@ -30,7 +30,7 @@ header nav{
 header .logo{
     width: 160px;
     height: 50px;
-    background-color: blue;
+    background-color: rgb(158, 158, 196);
     float: left;
 }
 header nav ul{
@@ -39,7 +39,7 @@ header nav ul{
 
 header nav li{
     float: left;
-    margin: 0 20px;
+    margin: 0 40px;
 }
 
 header nav a{
@@ -55,11 +55,10 @@ header nav a{
 .chamada1 h2{
     color: azure;
     font-size: 40px;
-    text-align: justify;    
+    
 }
 
 .chamada1 p{
-    margin-top: 30px;
     color: white;
-    t
+    margin-top: 20px;
 }
