@@ -115,4 +115,11 @@ section.sessao-1{
     background-color: #ff703d;
     border-radius: 30px;
     text-align: center;
+    
+}
+
+.device{
+
+    background-image: url('img/device.png');
+
 }
