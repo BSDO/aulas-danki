@@ -74,18 +74,22 @@ section .container{
 section.sessao-1{
     width: 100%;
     background-color: purple;
-    padding: 20px 2%;
+    padding:0 2%;
+    height: 400px;
 }
 
 .texto-sessao1{
     width: 50%;
     float: left;
-    padding: 30px 70px;
+    position: relative;
+    left: 45px;
+    margin-top: 60px;
+    padding-left: 80px;
 }
 
 .texto-sessao1 h2{
-    color: white;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 26px;
 }
 
 .texto-sessao1 p{
@@ -94,12 +98,14 @@ section.sessao-1{
     margin-top: 20px;
 }
 .texto-sessao1 ul{
-    margin-top: 20px;
+    font-size: 15px;
+    list-style-position: inside;
 
 }
 .texto-sessao1 ul li{
-    color: white;
-    list-style-position: inside;
+    float: left;
+    width: 100%;
+    margin-top: 8px;
 
 }
 
@@ -119,7 +125,44 @@ section.sessao-1{
 }
 
 .device{
+    float: left;    
+    width: 50%;
+    position: relative;
+    top: -30px;
+    height: 430px;
+    background-image: url(img/device.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
-    background-image: url('img/device.png');
 
+
+@media screen and (max-width:768px){
+    section.sessao-1{
+        padding:40px 2%;
+        height:auto;
+        text-align: center;
+    }
+    .texto-sessao1{
+        width: 100%;
+        margin-top: 0;
+        position: static;
+        float: none;
+    }
+    .texto-sessao1 ul{
+        display: inline-block;
+
+    }
+
+    .texto-sessao1 ul li{
+        float: none;
+        text-align: left;
+}
+    .device{
+        display: none;
+    }
+
+
+   
+    
 }
