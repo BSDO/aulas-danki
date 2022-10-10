@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 html,body{
+   
     height: 100%;
 }
+
+/* HEADER */
 .container{
     max-width: 1280px;
     margin: 0 auto;
@@ -23,7 +26,7 @@ header{
     background-position: center;
     background-size: cover;
 }
-
+/* LINKS */
 header nav{
     float:right;
 }
@@ -33,25 +36,64 @@ header .logo{
     background-color: rgb(158, 158, 196);
     float: left;
 }
-header nav ul{
+header nav.desktop-menu ul{
     list-style: none;
 }
 
-header nav li{
+header nav.desktop-menu li{
     display: inline-block;
     margin: 20px 40px;
 }
 
-header nav a{
+header nav.desktop-menu a{
     text-decoration: none;
     color: rgb(223, 222, 222);
 }
+
+nav.mobile-menu{
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image:url('img/menumobile.jpg');
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul{
+    display: block;
+    opacity: 1;
+}
+nav.mobile-menu ul{
+    background-color: white;
+    position: absolute;
+    transition: 8s;
+    opacity: 0;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    display: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li{
+    border-bottom: 2px solid black;
+    transition: 1s;
+}
+nav.mobile-menu ul li a{
+    color:black;
+    text-decoration: none;
+}
+nav.mobile-menu ul li:hover{
+    background-color:rgb(214, 37, 37);
+}
+
 
 .chamada1{
     float: right;
     width:700px;
     margin: 40px;
 }
+
 .chamada1 h2{
     color: azure;
     font-size: 40px;
@@ -89,7 +131,7 @@ section.sessao-1{
 
 .texto-sessao1 h2{
     font-weight: 300;
-    font-size: 26px;
+    font-size: 30px;
 }
 
 .texto-sessao1 p{
@@ -121,7 +163,7 @@ section.sessao-1{
     background-color: #ff703d;
     border-radius: 30px;
     text-align: center;
-    
+    margin-top: 20px;
 }
 
 .device{
@@ -135,9 +177,66 @@ section.sessao-1{
     background-size: 100% 100%;
 }
 
+/* sessao */
+.sessao-2{
+    padding-top:80px 2%;
+    background-color:white;
+    text-align: center;
+}
+
+.sessao-2 h2{
+    color:teal;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.sessao-2 P{
+    color:black;
+    margin-top: 30px;
+    max-width: 600px;
+    display: inline-block;
+    text-align: justify;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
+
+/* medias query */
 @media screen and (max-width:768px){
+    header{
+        width: 100%;
+        height: auto;
+        padding: 40px 2%;
+        min-height: 90vh;
+    }
+    
+    .desktop-menu{
+        display: none;
+    }
+
+    nav.mobile-menu{
+        display: block;
+    }
+
+    .chamada1{
+        width: 100%;
+        text-align: center;
+        float: none;
+    
+    }
+    .chamada1 h2{
+        font-weight: 300;
+        font-size: 30px;
+        padding: 0 10px;
+        color: brown;
+    }
+    .chamada1 p{
+        font-size:12px;
+        height: auto;
+      
+    }
+
     section.sessao-1{
         padding:40px 2%;
         height:auto;
@@ -147,22 +246,24 @@ section.sessao-1{
         width: 100%;
         margin-top: 0;
         position: static;
+        padding-left: 0;
         float: none;
+        display: inline-block;
     }
+    
+    .btn-1{
+        display: inline-block;
+    }
+    
     .texto-sessao1 ul{
         display: inline-block;
-
+        width: auto;
     }
-
     .texto-sessao1 ul li{
         float: none;
         text-align: left;
-}
+    }
     .device{
         display: none;
     }
-
-
-   
-    
 }
