@@ -119,7 +119,7 @@ section.sessao-1{
 }
 section.sessao1 .container{
 	max-width: 1000px;
-	height: calc(100% + 30px);
+	/* height: calc(100% + 30px); */
 }
 
 .texto-sessao1{
@@ -171,7 +171,7 @@ section.sessao1 .container{
 
 .device{
     float: left;    
-    width: 50%;
+    width: 40%;
     position: relative;
     top: -30px;
     height: 430px;
@@ -207,26 +207,25 @@ section.sessao1 .container{
     width: 100%;
     margin-top: 40px;
     position: relative;
-    top: 70px;
+    top: 50px;
 }
 /* sessao 3 */
 .sessao-3{
     width: 100%;
 
 }
-
-.wrap-parte1{
-    max-width: 400px;
-    float: right;
-
-}
-
 .parte-1{
     float:left;
     width: 50%;
     padding: 90px;
     background-color: #835FA7;
    
+}
+
+.wrap-parte1{
+    max-width: 400px;
+    float: right;
+    pad: 0  30px;
 }
 
 .parte-1  h2{
@@ -241,40 +240,139 @@ section.sessao1 .container{
     color:white;
     margin-top: 10px;
     font-style: italic;
+    line-height: 30px;
 }
 
 .parte-2{
     float: left;
     width: 50%;
-    background-color:#f7eeeb;
-    padding: 140px 0 90px 0;
+    padding: 90px 0 0 50px;
 }
 
 .sobre-autor{
-    max-width: 500px;
-    float: left;
-    padding-left: 30px;
+    float:left;
+    max-width: 600px;
+    /* padding-left: 30px; */
 }
 .titulo-autor{
     float: left;
     width: 100%;
+}
 
+.wrap-parte2{
+    width:cal(100%-40px);
+    float: left;
+}
+.wrap-parte2 h2{
+    font-size: 30px;
+}
+.wrap-parte2 p{
+    font-size: 13px;
 }
 
 .titulo-autor h2{
+    padding-right: 20px;
+}
+.titulo-autor .img-autor{
     float: left;
-    width: 40%;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border-radius: 20px;
+    position: relative;
+    top: 4px;
+}
+
+.descriçao-autor{
+    float:left;
+    width: 70%;
+    margin-top: 20px;
+}
+.descriçao-autor p{
+    line-height: 20px;
+}
+
+.slider{
+    width: 70%;
+    float: left;
+    margin-top: 8px;
     
 }
 
-.titulo-autor .img-autor{
-    width: 40px;
-    height: 40px;
+.slider span{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 20px 8px 0 0;
     border-radius: 20px;
     background-color:#ff703d;
-    float: left;
-    padding-right: 30px;
+    cursor: pointer;
 }
+
+.slider span:nth-child(3){
+    background-color: rgb(34, 3, 3);
+}
+.slider span:nth-child(1){
+    background-color: rgb(211, 20, 125);
+}
+
+.slider span:nth-child(2){
+    background-color: rgb(221, 96, 23);
+}
+
+/* sessao 4 */
+section.sessao-4{
+   
+    background-color:#671cb3;
+    padding: 100px 0;
+}
+
+.form{
+    float: left;
+    width: 50%;
+    color: wheat;
+    margin-left: 50px;
+}
+.form h2{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.form p{
+    font: 15px;
+    font-weight: 300;
+    max-width: 400px;
+}
+
+.form form input[type=text]{
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.form form textarea{
+    width: 100%;
+    max-width: 400px;
+    height: 160px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.form form input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background-color: #ff703d;
+    border-radius: 30px;
+    margin-top: 10px;
+    display: block;
+}
+
+
+
+/*  
+*/
 
 /* medias query */
 @media screen and (max-width: 830px){
@@ -302,6 +400,7 @@ section.sessao1 .container{
     .sessao-2 .container{
         margin-top: 30px;
     }
+   
 }
 
 
@@ -373,4 +472,17 @@ section.sessao1 .container{
     .sessao-2{
         padding: 40px 2%;
     }
+}
+
+@media screen and (max-width:580px){
+    .parte-1, .parte-2{
+        width: 100%;
+        padding: 40px;
+    }
+
+    .sessao-2 img{
+        top: 70px;
+        margin-top: 10px;
+    }
+    
 }
