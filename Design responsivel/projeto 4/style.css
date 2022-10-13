@@ -16,6 +16,7 @@ html,body{
     clear: both;
 }
 
+/*-----------------------header---------------------------------*/
 header{
     width: 100%;
     height: 70vh;
@@ -26,7 +27,7 @@ header{
     background-position: center;
     background-size: cover;
 }
-/* LINKS */
+
 header nav{
     float:right;
 }
@@ -108,7 +109,7 @@ nav.mobile-menu ul li:hover{
 
 /*Sessao header terminada*/
 
-/*sessao 1*/
+/*----------------------------sessao 1----------------------------------*/
 
 
 section.sessao-1{
@@ -179,8 +180,10 @@ section.sessao1 .container{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+/*sessao 1*/
 
-/* sessao 2 */
+
+/*--------------------------------- sessao 2 ------------------------*/
 .sessao-2{
     padding-left: 2%;
 	padding-right: 2%;
@@ -209,7 +212,9 @@ section.sessao1 .container{
     position: relative;
     top: 50px;
 }
-/* sessao 3 */
+/*sessao 2*/
+
+/*------------------- sessao 3 -----------------------------*/
 .sessao-3{
     width: 100%;
 
@@ -319,10 +324,11 @@ section.sessao1 .container{
 .slider span:nth-child(2){
     background-color: rgb(221, 96, 23);
 }
+/*sessao 3*/
 
-/* sessao 4 */
+
+/* ------------------------sessao 4 ----------------------------- */
 section.sessao-4{
-   
     background-color:#671cb3;
     padding: 100px 0;
 }
@@ -331,7 +337,7 @@ section.sessao-4{
     float: left;
     width: 50%;
     color: wheat;
-    margin-left: 50px;
+    padding-left:80px;
 }
 .form h2{
     font-size: 25px;
@@ -342,10 +348,11 @@ section.sessao-4{
     font: 15px;
     font-weight: 300;
     max-width: 400px;
+    padding-right: 15px;
 }
 
 .form form input[type=text]{
-    width: 100%;
+    width: 80%;
     max-width: 400px;
     height: 50px;
     padding: 20px;
@@ -353,26 +360,81 @@ section.sessao-4{
 }
 
 .form form textarea{
-    width: 100%;
-    max-width: 400px;
-    height: 160px;
-    padding-left: 10px;
-    margin-top: 10px;
+    width: 80%;
+	margin-top:8px;
+	max-width: 400px;
+	padding:15px;
+	border:1px solid rgb(200,200,200);
+	height: 160px;
 }
 
 .form form input[type=submit]{
-    width: 120px;
-    height: 40px;
-    background-color: #ff703d;
-    border-radius: 30px;
-    margin-top: 10px;
-    display: block;
+	border: 0;
+	background-color: #FF703D;
+	width: 165px;
+	height: 44px;
+	font-size: 13px;
+	color: white;
+	cursor: pointer;
+	margin-top:15px;
+	border-radius: 30px;
+
+}
+.map-wrap{
+    float: left;
+    width: 50%;
+    color: white;
+    padding: 0 20px;
 }
 
+.map-wrap h2{
+    font-size: 25px;
+    text-transform: uppercase;
+}
 
+.map-wrap3{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+.map-wrap2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top:100%;
+}
 
-/*  
-*/
+.map{
+    left: 0;
+    top: 0;
+    position:absolute;
+    width: 100%;
+    height:70%;
+    background-color: white;
+    border: 1px solid white;    
+    margin-top: 10px;
+}
+/*sessao 4*/
+
+footer{
+    width: 100%;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+    font-size: 20px;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+    font-size: 20px;
+}
+
 
 /* medias query */
 @media screen and (max-width: 830px){
@@ -401,9 +463,8 @@ section.sessao-4{
         margin-top: 30px;
     }
    
+   
 }
-
-
 
 
 @media screen and (max-width:768px){
@@ -469,8 +530,42 @@ section.sessao-4{
     .device{
         display: none;
     }
+    section.sessao-4 .container{
+        text-align: center;
+    }
     .sessao-2{
         padding: 40px 2%;
+    }
+
+    .form{
+        float: none;
+        width: 100%;
+        padding: 0%;
+    }
+
+    .form p{
+        display: inline-block;
+    }
+    .map-wrap{
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin-top: 0 6%;
+    }
+    .map-wrap3{
+        margin-top: 10px;
+        width: 80%;
+        padding-top: 80%;
+        display: inline-block;
+       
+    }
+    .map-wrap2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top:0;
     }
 }
 
@@ -484,5 +579,25 @@ section.sessao-4{
         top: 70px;
         margin-top: 10px;
     }
+    .map-wrap{
+        margin-top: 20px;
+    }
     
+    
+    footer{
+        width: 100%;
+        padding: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    footer p:nth-of-type(1){
+        float: none;
+        
+    }
+    footer p:nth-of-type(2){
+        float: none;
+        
+    }
 }
