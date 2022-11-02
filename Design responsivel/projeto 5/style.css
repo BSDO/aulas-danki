@@ -150,6 +150,7 @@ section.perfil-container .img-perfil{
 section.perfil-container .texto-perfil{
     width: 60%;
     padding:0  40px;
+    margin-top: 30px;
 }
 
 section.perfil-container .texto-perfil p{
@@ -157,6 +158,20 @@ section.perfil-container .texto-perfil p{
     font-size: 15px;
 }
 
+/* videos */
+
+section.videos{
+    padding: 50px 0;
+}
+
+section.videos > .container >  .box-video{
+    float: left;
+    background: #000000;
+    border: 2px solid white;
+    width: 33.3%;
+    padding-top:calc(33.3% * 0.6);
+
+}
 
 /* Medias query */
 
@@ -164,14 +179,34 @@ section.perfil-container .texto-perfil p{
     nav.menu-desktop{
         display: none;
     }
+
     nav.menu-mobile{
-        display: block;
         float: right;
+        width: 28px;
+        height: 28px;
         background-image: url('img/menu-mobile.png');
-        background-size: 50% 50%;
+        background-size:100% 100%;
         background-repeat: no-repeat;
+        cursor: pointer;
+        display: block;
     }
+    nav.menu-mobile ul{
+        position: absolute;
+        left: 0;
+        top: 70px;
+        background-color: aliceblue;
+        text-align: center;
+        width: 100%;
+        z-index:2;
+        display: none;
     
+    }
+    nav.menu-mobile ul li{
+        text-transform: uppercase;
+    }
+    nav.menu-mobile ul li{
+        padding: 10px 0;
+    }    
 }
 @media screen and (max-width:658px){
     nav.menu-desktop{
@@ -180,10 +215,32 @@ section.perfil-container .texto-perfil p{
     nav.menu-mobile{
         display: block;
         float: right;
+        width: 28px;
+        height: 28px;
         background-image: url('img/menu-mobile.png');
-        background-size: 50% 50%;
+        background-size:100% 100%;
         background-repeat: no-repeat;
+        cursor: pointer;
     }
+    nav.menu-mobile ul{
+        position: absolute;
+        left: 0;
+        top: 70px;
+        background-color: aliceblue;
+        text-align: center;
+        width: 100%;
+        z-index:2;
+        display: none   ;
+    
+    }
+    nav.menu-mobile ul li{
+        text-transform: uppercase;
+    }
+    nav.menu-mobile ul li{
+        padding: 10px 0;
+    }
+
+
     section.servicos > .container{
         flex-direction: column;
     }
@@ -208,9 +265,8 @@ section.perfil-container .texto-perfil p{
         text-align: center;
         display: inline-block;
         height: auto;
-        position: static;   
+        position: static;  
 
-       
     } 
     section.perfil-container .img-perfil{
         width: 70%;
