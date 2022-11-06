@@ -1,78 +1,80 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;      
+    font-family: 'Montserrat', sans-serif;
 }
-.clear{
+
+.clear {
     clear: both;
 }
 
-html,body   {
+html,
+body {
     height: 100%;
 }
 
 /* HEADER */
 
-header{
+header {
     padding: 15px;
 }
 
-.container{
+.container {
     max-width: 1200px;
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-header .logo img{
+header .logo img {
     float: left;
     width: 250px;
 }
 
-nav.menu-mobile{
+nav.menu-mobile {
     display: none;
-    
+
 }
 
-header nav.menu-desktop{
+header nav.menu-desktop {
     float: right;
     padding: 8px 0;
 }
 
-header nav.menu-desktop ul{
+header nav.menu-desktop ul {
     list-style: none;
 }
 
-header nav.menu-desktop ul li{
+header nav.menu-desktop ul li {
     float: left;
     font-size: 15px;
     text-transform: uppercase;
     padding: 0 20px;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 
- /* section mosaico */
+/* section mosaico */
 
-.mosaico-single{
+.mosaico-single {
     float: left;
     width: calc(100% / 6);
 }
 
-.img-mosaico-single{
+.img-mosaico-single {
     width: 100%;
     padding-top: 100%;
-    background-color:#576975;
+    background-color: #576975;
     border: 5px solid white;
- 
+
 }
 
 /* Section servico */
-section.servicos > .container{
+section.servicos>.container {
     max-width: 800px;
     display: flex;
     align-items: center;
@@ -81,55 +83,56 @@ section.servicos > .container{
     text-align: center;
 }
 
-section.servico > .container .box-servico{
+section.servico>.container .box-servico {
     background-image: url('img/icone_dente.png');
     background-size: 15px 15px;
     background-position: center bottom;
     background-repeat: no-repeat;
 }
 
-section.servicos > .container > .box-servico h2{
+section.servicos>.container>.box-servico h2 {
     color: wheat;
     font-size: 15px;
 }
-section.servicos > .container > .box-servico p{
+
+section.servicos>.container>.box-servico p {
     font-size: 10px;
     color: rgb(0, 8, 8);
     margin-top: 8px
 }
 
-section.servicos > .container .box-servico:nth-of-type(1){
-	width: 30%;
-	padding:30px 2%;
-	background-color: #576975;
+section.servicos>.container .box-servico:nth-of-type(1) {
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
 }
 
-section.servicos > .container .box-servico:nth-of-type(2){
-	width: 40%;
-	padding:45px 2%;
-	background-color: #688293;
-	background-image: none;
+section.servicos>.container .box-servico:nth-of-type(2) {
+    width: 40%;
+    padding: 45px 2%;
+    background-color: #688293;
+    background-image: none;
 }
 
-section.servicos > .container .box-servico:nth-of-type(3){
-	width: 30%;
-	padding:30px 2%;
-	background-color: #576975;
+section.servicos>.container .box-servico:nth-of-type(3) {
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
 }
 
 
 /*section perfil*/
 
-section.perfil-container .container{
+section.perfil-container .container {
     max-width: 800px;
 }
 
-section.perfil-container .perfil-wrap{
-    padding-top:60%;
+section.perfil-container .perfil-wrap {
+    padding-top: 60%;
     position: relative;
 }
 
-section.perfil-container .perfil-wrap2{
+section.perfil-container .perfil-wrap2 {
     position: absolute;
     left: 0;
     top: 0;
@@ -137,9 +140,9 @@ section.perfil-container .perfil-wrap2{
     width: 100%;
     height: 100%;
 
-} 
+}
 
-section.perfil-container .img-perfil{
+section.perfil-container .img-perfil {
     width: 40%;
     height: 100%;
     background-image: url('img/img_perfil.png');
@@ -147,13 +150,13 @@ section.perfil-container .img-perfil{
 }
 
 
-section.perfil-container .texto-perfil{
+section.perfil-container .texto-perfil {
     width: 60%;
-    padding:0  40px;
+    padding: 0 40px;
     margin-top: 30px;
 }
 
-section.perfil-container .texto-perfil p{
+section.perfil-container .texto-perfil p {
     margin-top: 20px;
     font-size: 15px;
     text-align: justify;
@@ -161,20 +164,21 @@ section.perfil-container .texto-perfil p{
 
 /* videos */
 
-section.videos{
+section.videos {
     padding: 50px 0;
 }
 
-section.videos .box-video{
+section.videos .box-video {
     float: left;
     width: 33.3%;
     position: relative;
-    padding-top:calc(33.3% * 0.6);
+    padding-top: calc(33.3% * 0.6);
     border: 5px solid white;
 
 }
-section.videos iframe{
-    position:absolute;
+
+section.videos iframe {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -182,21 +186,21 @@ section.videos iframe{
 }
 
 /* Tratamentos */
-section.tratamentos .tratamento-container{
+section.tratamentos .tratamento-container {
     float: left;
     width: 33.3%;
 }
 
-.single-tratamento{
+.single-tratamento {
     padding: 20px;
 }
 
-.single-tratamento h2{
+.single-tratamento h2 {
     font-size: 19px;
     color: chocolate;
 }
 
-.single-tratamento p{
+.single-tratamento p {
     margin-top: 10px;
     font-size: 14px;
     color: #576975;
@@ -204,178 +208,239 @@ section.tratamentos .tratamento-container{
 }
 
 
-section.tratamentos > h2{
+section.tratamentos>h2 {
     color: blue;
     font-size: 25px;
     text-transform: uppercase;
     text-align: center;
-    font-family:Arial;
+    font-family: Arial;
 }
 
-section.tratamentos > .container{
+section.tratamentos>.container {
     padding: 60px 0;
 }
+
 /*  */
 
 
 /* Depoimentos */
+section.Depoimentos{
+    padding: 40px 0;
+}
 
+section.Depoimentos > h2{
+    color: goldenrod;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+}
 
+section.Depoimentos > .container{
+    padding: 30px;
+    max-width: 500px;
+}
 
+section.depoimento-single{
+    text-align: center;
+}
+
+.depoimento-single quote{
+    color: 15px;
+    color: red;
+}
+
+.depoimento-single .nome-depoimento{  
+    padding: 30px;
+}
+.nome-depoimento > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.nome-depoimento span{
+    color: #2895dd;
+    font-size: 20px;
+    display:inline-block;
+    vertical-align:top;
+    padding-left: 8px;
+    position: relative;
+    top: 10px;
+}
 /**/
+
+/*social media*/
+
+
+
+
+/*  *
+
+
 
 /* Medias query */
 
-@media screen and (max-width:860px){
-    nav.menu-desktop{
-        display: none;
-    }
+@media screen and (max-width: 800px){
+    
 
-    nav.menu-mobile{
+
+    nav.menu-mobile {
         float: right;
         width: 28px;
         height: 28px;
         background-image: url('img/menu-mobile.png');
-        background-size:100% 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         cursor: pointer;
         display: block;
     }
-    nav.menu-mobile ul{
+
+    nav.menu-mobile ul {
         position: absolute;
         left: 0;
         top: 70px;
         background-color: aliceblue;
         text-align: center;
         width: 100%;
-        z-index:2;
+        z-index: 2;
         display: none;
-    
+
     }
-    nav.menu-mobile ul li{
+
+    nav.menu-mobile ul li {
         text-transform: uppercase;
     }
-    nav.menu-mobile ul li{
+
+    nav.menu-mobile ul li {
         padding: 10px 0;
-    }    
-    section.videos{
+    }
+
+    section.videos {
         text-align: center;
     }
 
-    section.videos .box-video{      
+    section.videos .box-video {
         width: 80%;
         position: relative;
-        padding-top:calc(100% * 0.6);
+        padding-top: calc(100% * 0.6);
         border: 5px solid white;
         display: inline-block;
         float: none;
     }
-    section.videos iframe{
-        position:absolute;
+
+    section.videos iframe {
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
     }
-   
+
 
 
 }
-@media screen and (max-width:658px){
-    nav.menu-desktop{
+
+@media screen and (max-width:658px) {
+    nav.menu-desktop {
         display: none;
     }
-    nav.menu-mobile{
+
+    nav.menu-mobile {
         display: block;
         float: right;
         width: 28px;
         height: 28px;
         background-image: url('img/menu-mobile.png');
-        background-size:100% 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         cursor: pointer;
     }
-    nav.menu-mobile ul{
+
+    nav.menu-mobile ul {
         position: absolute;
         left: 0;
         top: 70px;
         background-color: aliceblue;
         text-align: center;
         width: 100%;
-        z-index:2;
-        display: none   ;
-    
+        z-index: 2;
+        display: none;
+
     }
-    nav.menu-mobile ul li{
+
+    nav.menu-mobile ul li {
         text-transform: uppercase;
     }
-    nav.menu-mobile ul li{
+
+    nav.menu-mobile ul li {
         padding: 10px 0;
     }
 
 
-    section.servicos > .container{
+    section.servicos>.container {
         flex-direction: column;
     }
-    section.servicos > .container .box-servico:nth-of-type(1){
+
+    section.servicos>.container .box-servico:nth-of-type(1) {
         width: 90%;
         max-width: 400px;
     }
-    
-    section.servicos > .container .box-servico:nth-of-type(2){
+
+    section.servicos>.container .box-servico:nth-of-type(2) {
         width: 90%;
         max-width: 430px;
     }
-    
-    section.servicos > .container .box-servico:nth-of-type(3){
+
+    section.servicos>.container .box-servico:nth-of-type(3) {
         width: 90%;
         max-width: 400px;
     }
-    section.perfil-container .perfil-wrap{
+
+    section.perfil-container .perfil-wrap {
         padding-top: 0;
     }
-    section.perfil-container .perfil-wrap2{
+
+    section.perfil-container .perfil-wrap2 {
         text-align: center;
         display: inline-block;
         height: auto;
-        position: static;  
+        position: static;
 
-    } 
-    section.perfil-container .img-perfil{
+    }
+
+    section.perfil-container .img-perfil {
         width: 70%;
         display: inline-block;
         height: auto;
         padding-top: 60%;
     }
-    
-    
-    section.perfil-container .texto-perfil{
+
+
+    section.perfil-container .texto-perfil {
         width: 100%;
         display: inline-block;
-        padding:0  40px;
+        padding: 0 40px;
         text-align: justify;
     }
-    section.videos{
+
+    section.videos {
         text-align: center;
     }
 
-    section.videos .box-video{      
+    section.videos .box-video {
         display: inline-block;
         float: none;
         width: 90%;
         position: relative;
-        padding-top:calc(100% * 0.6);
+        padding-top: calc(100% * 0.6);
     }
-    section.videos iframe{
-        position:absolute;
+
+    section.videos iframe {
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
     }
-    
+
 }
-
-
-
-
