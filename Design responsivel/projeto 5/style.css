@@ -271,11 +271,144 @@ section.depoimento-single{
 
 /*social media*/
 
+.insta-container{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background:#576975;
+}
+
+.insta-container .container p{
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.social-mosaico{
+    float: left;
+    width: 100%;
+
+}
+
+.social-mosaico div.img-single-mosaico{
+    background-image: url("../projeto 5/img/img_perfil.png");
+    background-position: center;
+    background-size: cover
+}
+
+.img-single-mosaico{
+    float: left;
+    width: calc(100% / 7);
+    padding-top: calc(100% / 7) ;
+    background: #688293;
+    border: 6px solid rgb(245, 236, 236);
+}
+
+.face-container{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    background:#576975
+}
+.face-container .container p{
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* contatos */  
+
+section.contatos{
+    padding:40px 0;
+ 
+}
+
+.contatos > h2{
+    text-align: center;
+    font-size: 25px;
+    color: #576975;
+}
+
+.contatos form{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    
+}
+
+.form-wrap{
+    float: left;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.form-wrap span{
+    font: 19px;
+   
+}
+
+.contatos form input[type=text]{
+    width: 100%;
+    line-height: 30px;
+    padding-left:10px;
+    border: 4px solid black;
+}
+
+.contatos textarea{
+    width: 100%;
+     padding: 5px;
+    border: 4px solid black;
+}
+
+ 
+/* footer */
+
+footer{
+    padding: 50px 0;
+    background-color: #688293;
+    
+}
+
+footer .container{
+    max-width: 800px;
+}
+
+footer .footer-block{
+    float: left;
+    width: 33.3%;
+}
+
+footer > .container > .footer-block  h2{
+    font-size: 20px;
+    color: rgb(235, 2, 2);
+}
 
 
 
-/*  *
 
+
+@media screen and (max-width:1000px) {
+    .img-single-mosaico{
+        width: calc(100% / 5);
+        padding-top: calc(100% / 5) ;
+    }
+    .social-mosaico > div:nth-of-type(1n+6){
+        display: none;
+    }
+}
 
 
 /* Medias query */
@@ -335,10 +468,26 @@ section.depoimento-single{
         width: 100%;
         height: 100%;
     }
+    .img-single-mosaico{
+        width: calc(100% / 4);
+        padding-top: calc(100% / 4) ;
+    }
+    .social-mosaico > div:nth-of-type(1n+5){
+        display: none;
+    }
 
-
-
+    footer{
+        text-align: center;
+    }
+    footer .footer-block{
+        float:none;
+        width: 100%;
+        margin: 30px 0;
+    
+    }
 }
+
+
 
 @media screen and (max-width:658px) {
     nav.menu-desktop {
@@ -442,5 +591,24 @@ section.depoimento-single{
         width: 100%;
         height: 100%;
     }
+    .img-single-mosaico{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3) ;
+    }
+    .social-mosaico > div:nth-of-type(1n+4){
+        display: none;
+    }
+    .w50{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer .footer-block{
+        float:none;
+        width: 100%;
+        margin: 30px 0;
+    
+    }
 
-}
+}   
