@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    padding: 20px 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+.nav-mobile{
+   display: none;
+}
+
+.container{
+    padding: 0 2%;
+}
+.container > .logo{
+    float: left;
+}
+
+.container > .nav-desktop{
+    float: right;   
+    position: relative;
+    top: 40px;
+}
+
+.nav-desktop ul{
+    list-style-type: none;
+}
+
+.nav-desktop ul li{
+    float: left;
+    padding: 0 10px;
+}
+
+.nav-desktop ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: black;
+}
+
+section.banner{
+    width: 100%;
+    height: 80vh;
+    /* max-height: 500px; */
+    background: black;
+    background-image: url('imagens/bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+}
