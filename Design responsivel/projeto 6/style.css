@@ -19,7 +19,7 @@ header{
 .clear{
     clear: both;
 }
-
+/* nav bar */
 .nav-mobile{
    display: none;
 }
@@ -53,6 +53,8 @@ header{
     color: black;
 }
 
+
+/* banner */
 section.banner{
     width: 100%;
     height: 500px ;
@@ -100,15 +102,22 @@ section.banner{
 
 
 
+/* medias query */
+
 @media screen and (max-width:720px){
     .nav-desktop{
         display: none;
     }
+
+      
+    
+
 }
 
 @media screen and (max-width:580px){
     .text-banner{
-        padding: 20px;
+        padding: 40px 20px;
+      
     }
 
     .text-single-banner{
@@ -121,6 +130,7 @@ section.banner{
         background-image: url('imagens/box-text.png');
         background-size: 100% 100%;
         margin-top: 20px;
+        overflow: hidden;
     }
     
     .text-single-banner:nth-of-type(2){
