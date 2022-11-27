@@ -219,10 +219,19 @@ section.veiculos-destaque .line-titulo h2{
     border-radius: 50px;
     text-transform: uppercase;
 }
+/*sessao depoimentos  */
+section.descriçao-serviços .serviços-w50{
+    float: left;
+    width: 50%;
+    padding: 70px 100px;
+    background-color: #EB2D2D ;
+}
 
 
 
 
+
+/* fim da sessao */
 
 /* medias query */
 
