@@ -143,7 +143,6 @@ section.veiculos-destaque .container {
         max-width: 1000px; 
         padding: 40px 0;
         margin: 0 auto;
-        text-align: center;
 }
 
 
@@ -171,6 +170,7 @@ section.veiculos-destaque .line-titulo h2{
     font-style: italic;
     text-transform: uppercase;
     padding: 0 20px;
+    
 }
 
 .vitrine-destaque{
@@ -183,8 +183,45 @@ section.veiculos-destaque .line-titulo h2{
     width: 100%;
     padding-top: 100%;
     background-size: 100% 100%;
-    border: 18px solid white;
+    border: 8px solid white;
 }
+
+
+
+.vitrine-destaque > .info-carro > h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-style: italic;
+    margin-left: 8px;
+}
+
+.vitrine-destaque > .info-carro > p {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #0000dd;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.vitrine-destaque > .info-carro > a {
+    color:aliceblue;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 8px;
+    width: 150px;
+    font-size: 16px;
+    background-color: #EB2D2D;
+    text-decoration: none;
+    padding: 14px;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+
+
 
 
 /* medias query */
@@ -235,5 +272,59 @@ section.veiculos-destaque .line-titulo h2{
         left: -20px;
         height: 60px;
     }
+    section.veiculos-destaque .container {
+        max-width: 1000px;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .vitrine-destaque{
+        float: none;
+        width: 75%;
+        margin-top: 15px;
+       
+    }
+  
+
+}
+@media  screen and (max-width:660px){
+    
+    section.veiculos-destaque .container {
+        max-width: 1000px;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .vitrine-destaque{
+        display: inline-block;
+        float: none;
+        width: 75%;
+        margin-top: 15px;
+       
+    }
+    .vitrine-destaque > .info-carro > a{
+        display: inline-block;
+    }
+    
+    
+}
+
+
+@media  screen and (max-width:560px){
+    
+    section.veiculos-destaque .container {
+        max-width: 1000px;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .vitrine-destaque{
+        display: inline-block;
+        float: none;
+        width: 75%;
+        margin-top: 15px;
+    }
+    .vitrine-destaque > .info-carro > a{
+        display: inline-block;
+    }
+    
+    
 }
    
