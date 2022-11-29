@@ -218,14 +218,17 @@ section.veiculos-destaque .line-titulo h2{
     text-align: center;
     text-transform: uppercase;
 }
-/*sessao depoimentos  */
+/*sessao depoimentos e serviços */
+
+.descriçao-serviços{
+    display: flex;
+}
+
 
 .serviços-w50{
-    float: left;
     width: 50%;
     padding: 90px 0;
-    background-color: #EB2D2D ;
-    color:black;
+    background:#242424;
     text-align: center;
 }
 
@@ -238,6 +241,7 @@ section.veiculos-destaque .line-titulo h2{
     font-size: 32px;
     font-weight: bold;
     font-style: italic;
+    color:#ffffff;
 }
 
 .serviços-wraper ul{
@@ -248,6 +252,7 @@ section.veiculos-destaque .line-titulo h2{
 .serviços-wraper li{
     margin-left: 15px;
     font-size: 18px;
+    color: #c8c8e6;
 }
 
 .serviços-wraper a{
@@ -256,7 +261,7 @@ section.veiculos-destaque .line-titulo h2{
     width: 150px;
     height: 50px;
     line-height: 50px;
-    background-color:#0000dd;
+    background-color:#e61414;
     color:#ffffff;
     text-align: center;
     margin-left: 30px;
@@ -266,15 +271,75 @@ section.veiculos-destaque .line-titulo h2{
     text-transform: uppercase;
 }
 
+.depoimentos-w50{
+ 
+    width: 50%;
+    padding: 90px 100px;
+    background:#d40909;
+    
+}
+
+.depoimentos-w50 h2{
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    color:#ffffff;
+}
+
+.depoimentos-w50 .depoimento-single{
+    margin-top: 19px;
+    color:#c8c8e6;
+}
+.depoimentos-w50 p{
+    font-size: 22px;
+
+}
+
+.nav{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.nav img{
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.arrows{
+    float: left;
+}
 
 
+.nome-depoimento{
+    float: right;
+    color: #ffffff;
+}
 
 
-/* fim da sessao *//
+/* fim da sessao */
 
 /* medias query */
 
-@media screen and (max-width:720px){
+@media screen and (max-width: 850px) {
+    .serviços-wraper a{
+        display:block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .descriçao-serviços{
+        flex-direction: column;
+    }
+
+    .serviços-w50, .depoimentos-w50{
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width:768px){
     .nav-desktop{
         display:none;
     } 
