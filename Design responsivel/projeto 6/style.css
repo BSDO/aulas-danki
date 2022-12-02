@@ -161,7 +161,8 @@ section.veiculos-destaque .container {
     background-color: black;
     
 }
-section.veiculos-destaque .line-titulo h2{
+
+.line-titulo h2{
     position: relative;
     background: white;
     display: inline-block;
@@ -315,9 +316,15 @@ section.veiculos-destaque .line-titulo h2{
     float: right;
     color: #ffffff;
 }
-
-
 /* fim da sessao */
+
+/* sessao formulario de contatos */
+section.contatos{
+    padding: 90px 0;
+}
+
+
+/* fim de contato */
 
 /* medias query */
 
