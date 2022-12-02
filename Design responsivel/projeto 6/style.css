@@ -320,8 +320,65 @@ section.veiculos-destaque .container {
 
 /* sessao formulario de contatos */
 section.contatos{
-    padding: 90px 0;
+    padding: 90px 2%;
 }
+
+section.contatos form{
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+section.contatos .input-wraper{
+    float: right;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.input-wraper input[type=text]{
+    width: 100%;
+    border: 2px solid black;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+section.contatos  textarea{
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    resize: none;
+    border: 2px solid black;
+}
+
+section.contatos input[type=submit]{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color:#e61414;
+    color:#ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+section.contatos form .input-wraper:nth-of-type(5){
+    text-align: center;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+
+   
 
 
 /* fim de contato */
