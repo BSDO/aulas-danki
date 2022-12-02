@@ -348,6 +348,8 @@ section.contatos  textarea{
     height: 120px;
     resize: none;
     border: 2px solid black;
+    padding-left: 7px;
+    padding-top: 10px;
 }
 
 section.contatos input[type=submit]{
@@ -376,16 +378,52 @@ section.contatos form .input-wraper:nth-of-type(5){
 .w50{
     width: 50%;
 }
-
-
-   
-
-
 /* fim de contato */
+
+/* footer */
+
+footer{
+    padding:40px 2%;
+    background: #242424;
+}
+
+footer nav{
+    float: left;
+}
+footer nav ul{
+    list-style-type: none;
+}
+
+footer nav ul li{
+    float: left;
+    padding: 0 20px;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer p{
+    float: right;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* final de footer */
 
 /* medias query */
 
 @media screen and (max-width: 850px) {
+    .w50{
+        width: 100%;
+    }
+
+    footer nav{
+        display:none ;
+    }
+    
     .serviços-wraper a{
         display:block;
         margin-left: 0;
