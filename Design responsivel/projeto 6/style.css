@@ -409,10 +409,60 @@ footer p{
     color: white;
     font-size: 25px;
 }
-
-
 /* final de footer */
 
+/* Página de vendas */
+
+
+section.vendas{
+    min-height: 90%;
+}
+
+section.vendas .linha-titulo{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.linha{
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 15px;
+    background-color: black;
+    
+}
+
+.linha-titulo h2{
+    position: relative;
+    background: #ffffff;
+    display: inline-block;
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+section.vendas .content-vendas{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    background-color: #ff0000;    
+    
+}
+
+
+
+
+
+
+
+
+/* final vendas*/
 /* medias query */
 
 @media screen and (max-width: 850px) {
